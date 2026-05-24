@@ -68,8 +68,8 @@ if torch.backends.cudnn.is_available():
 # =========================
 # Konfiguracija
 # =========================
-CSV_PATH = "/Users/4c/Desktop/GHQ/KvantniRegresor/loto7hh_4620_k41.csv"
-OUT_TXT = Path("/Users/4c/Desktop/GHQ/TimeSeriesModels/TFT_loto_v2_predikcija.txt")
+CSV_PATH = "/loto7hh_4620_k41.csv"
+OUT_TXT = Path("/1_TFT_loto_v2_predikcija.txt")
 
 N_MIN, N_MAX = 1, 39
 K = 7
@@ -437,9 +437,9 @@ epoch  462/462  train_loss=0.31612  val_loss=3.54052  best_epoch=1
 ✅ 1_TFT_loto_v2 trening završen. best_epoch=1, best_val_loss=1.13737
 
 Predikcija sledeće Loto 7/39 kombinacije:
-TFT_best     -> [2, 7, 9, 25, 29, 34, 37]  (suma=143, neparnih=5/7, niskih(<=19)=3/7, raspon=35)
-TFT_final    -> [4, 20, 24, 26, 28, 30, 38]  (suma=170, neparnih=0/7, niskih(<=19)=1/7, raspon=34)
-TFT_ensemble -> [4, 20, 24, 26, 28, 30, 38]  (suma=170, neparnih=0/7, niskih(<=19)=1/7, raspon=34)
+TFT_best     -> [2, x, 9, y, 29, z, 37]  (suma=143, neparnih=5/7, niskih(<=19)=3/7, raspon=35)
+TFT_final    -> [4, x, 24, y, 28, z, 38]  (suma=170, neparnih=0/7, niskih(<=19)=1/7, raspon=34)
+TFT_ensemble -> [4, x, 24, y, 28, z, 38]  (suma=170, neparnih=0/7, niskih(<=19)=1/7, raspon=34)
 
 Back-test (poslednjih 100 izvlačenja):
 model          hits/7    hit%     AUC    LRAP
