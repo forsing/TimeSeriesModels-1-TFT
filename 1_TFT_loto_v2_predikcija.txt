@@ -1,7 +1,0 @@
-
---- 2026-05-24 22:54:44.776834 (seed=39, N=4620, epochs=462) ---
-TFT_best     -> [2, x, 9, y, 29, z, 37]  (suma=143, neparnih=5/7, niskih(<=19)=3/7, raspon=35)
-TFT_final    -> [4, x, 24, y, 28, z, 38]  (suma=170, neparnih=0/7, niskih(<=19)=1/7, raspon=34)
-TFT_ensemble -> [4, x, 24, y, 28, z, 38]  (suma=170, neparnih=0/7, niskih(<=19)=1/7, raspon=34)
-back-test: BEST hits/7=1.260, AUC=0.501, LRAP=0.251; FINAL hits/7=1.330, AUC=0.510, LRAP=0.263; ENSEMBLE hits/7=1.330, AUC=0.511, LRAP=0.263; baseline=1.256
-elapsed=427.4s
