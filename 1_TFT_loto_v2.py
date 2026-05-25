@@ -137,8 +137,8 @@ class TemporalFusionTransformer(nn.Module):
 # =========================
 # Učitavanje Loto 7/39 CSV-a
 # =========================
-CSV_PATH = "/Users/4c/Desktop/GHQ/KvantniRegresor/loto7hh_4620_k41.csv"
-OUT_TXT = Path("/Users/4c/Desktop/GHQ/TimeSeriesModels/1_TFT_loto_v2_predikcija.txt")
+CSV_PATH = "/loto7hh_4620_k41.csv"
+OUT_TXT = Path("/1_TFT_loto_v2_predikcija.txt")
 
 LOOK_BACK = 10
 WINDOWS = (20, 50, 100)
@@ -456,9 +456,9 @@ epoch  100/100  train_loss=0.14622  val_loss=7.08012  best_epoch=1
 ✅ Trening završen. best_epoch=1, best_val_loss=1.13710
 
 Predikcija sledeće Loto 7/39 kombinacije:
-TFT_best     -> [8, 10, 11, 23, 26, 29, 37]  (suma=144, neparnih=4/7, niskih(<=19)=3/7, raspon=29)
-TFT_final    -> [3, 4, 7, 18, 20, 21, 27]  (suma=100, neparnih=4/7, niskih(<=19)=4/7, raspon=24)
-TFT_ensemble -> [3, 4, 7, 18, 20, 21, 27]  (suma=100, neparnih=4/7, niskih(<=19)=4/7, raspon=24)
+TFT_best     -> [8, x, 11, y, 26, z, 37]  (suma=144, neparnih=4/7, niskih(<=19)=3/7, raspon=29)
+TFT_final    -> [3, x, 7, y, 20, z, 27]  (suma=100, neparnih=4/7, niskih(<=19)=4/7, raspon=24)
+TFT_ensemble -> [3, x, 7, y, 20, z, 27]  (suma=100, neparnih=4/7, niskih(<=19)=4/7, raspon=24)
 
 Back-test (poslednjih 100 izvlačenja):
 model              hits/7    hit%     AUC    LRAP
